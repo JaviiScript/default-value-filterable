@@ -26,7 +26,7 @@ class FieldServiceProvider extends ServiceProvider
      */
     protected function registerFieldMacros()
     {
-        Field::macro('defaultValueFilterable', function ($callback, callable $filterableCallback = null) {
+        Field::macro('defaultFilterable', function ($callback, callable $filterableCallback = null) {
             $this->withMeta(['defaultValueCallback' => $callback]);
             $this->filterable($filterableCallback);
             return $this;

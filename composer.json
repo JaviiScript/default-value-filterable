@@ -1,14 +1,24 @@
 {
     "name": "javii-script/default-value-filterable",
-    "description": "A Laravel Nova field.",
+    "description": "A Nova macro that streamlines setting a default value in addition to enabling filtering functionality on a field.",
     "keywords": [
+        "javii-script",
         "laravel",
-        "nova"
+        "nova",
+        "macro"
     ],
+    "version": "1.0.0",
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0"
+        "php": "^7.3|^8.0",
+        "laravel/nova": "^4.0"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "JaviiScript\\DefaultValueFilterable\\": "src/"
